@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --background: 330 100% 98%;
+  --foreground: 280 10% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 280 10% 20%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 280 10% 20%;
+  --primary: 320 70% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 280 60% 80%;
+  --secondary-foreground: 280 10% 20%;
+  --accent: 140 40% 60%;
+  --accent-foreground: 0 0% 100%;
+  --muted: 280 30% 95%;
+  --muted-foreground: 280 10% 40%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 280 20% 90%;
+  --input: 280 20% 90%;
+  --ring: 320 70% 60%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 280 20% 10%;
+  --foreground: 280 10% 95%;
+  --card: 280 20% 12%;
+  --card-foreground: 280 10% 95%;
+  --popover: 280 20% 12%;
+  --popover-foreground: 280 10% 95%;
+  --primary: 320 70% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 280 60% 40%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 140 40% 50%;
+  --accent-foreground: 0 0% 100%;
+  --muted: 280 20% 20%;
+  --muted-foreground: 280 10% 70%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 280 20% 25%;
+  --input: 280 20% 25%;
+  --ring: 320 70% 60%;
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-16 px-4 md:px-8 lg:px-16;
+  }
+
+  .transition-all-300 {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
